@@ -21,4 +21,8 @@
         <InformationalVersion></InformationalVersion>
     </PropertyGroup>
 
+    <ItemGroup>
+        <ProjectReference Include="..\..\yyLib\yyLib\yyLib.csproj" />
+    </ItemGroup>
+
 </Project>

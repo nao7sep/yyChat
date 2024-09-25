@@ -3,7 +3,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <title>@ViewData["Title"] - yyChat</title>
+        <title>@ViewData["Title"] - @yyAssemblyInfo.AppAssembly?.AssemblyTitle</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
         <link rel="stylesheet" href="~/yyChat.styles.css" asp-append-version="true" />
@@ -12,7 +12,7 @@
     <body>
         <header class="header">
             <nav class="navbar">
-                <a class="navbar-brand" asp-area="" asp-page="/Index">yyChat</a>
+                <a class="navbar-brand" asp-area="" asp-page="/Index">@yyAssemblyInfo.AppAssembly?.AssemblyTitle</a>
 
                 <button class="navbar-toggler" type="button">
                     <span class="navbar-toggler-icon"></span>
@@ -36,7 +36,7 @@
             @RenderBody()
         </main>
 
-        <footer class="footer">&copy; 2024 Yoshinao Inoguchi</footer>
+        <footer class="footer">&copy; @DateTime.UtcNow.Year @yyAssemblyInfo.AppAssembly?.Company</footer>
 
         <script src="~/js/site.js" asp-append-version="true"></script>
 
