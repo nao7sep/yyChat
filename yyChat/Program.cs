@@ -1,4 +1,4 @@
-namespace yyChat
+﻿namespace yyChat
 {
     public class Program
     {
