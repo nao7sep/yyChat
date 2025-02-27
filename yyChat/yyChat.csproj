@@ -21,7 +21,7 @@
         <InformationalVersion></InformationalVersion>
 
         <EnableNETAnalyzers>true</EnableNETAnalyzers>
-        <AnalysisMode>Recommended</AnalysisMode>
+        <AnalysisMode>All</AnalysisMode>
     </PropertyGroup>
 
     <ItemGroup>
